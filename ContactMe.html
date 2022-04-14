@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <title>Final Assessment</title>
+   <script src="js/final.js" type="text/javascript"></script>
+   <link rel='stylesheet' href='css/index.css' type='text/css' media='screen'>
+
+</head>
+<body>
+    <div id="header">
+        <h2>Personal Website of Manikaran Singh</h2>
+    </div>
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="aboutMe.html">About</a></li>
+            <li> <a href="ContactMe.html">Contact</a> </li>
+            <li> <a href="ResumeDownload.html">Resume</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <h2 style="text-align: center; font-size: 35pt; color: rgb(13, 122, 113); text-decoration: underline;"> Contact Me</h2>
+        <fieldset>
+            <legend>Contact Manikaran Singh</legend>
+        <form name="CustomerDetails" method="POST" action="https://formspree.io/f/xrgjylab">
+        <label><span>*</span>First Name: </label>
+        <input type="text" id="FN" name="FirstName" maxlength="20" placeholder="Enter first name" required autofocus >
+        <br> <br>
+        <label><span>*</span>Last Name: </label>
+        <input type="text" id="LN"name="LastName" placeholder="Enter last Name" required >
+        <br> <br>
+        <label><span>*</span>Age: </label>
+        <input type="text" id="age" name="Age" min="0" max="99" placeholder="Enter Age" required>
+        <br> <br>
+        <label><span>*</span>Address: </label>
+        <input type="text" id="adrs" name="Address"  placeholder="Enter Address" size=50 required>
+        <label><span>*</span>City: </label>
+        <input type="text" id="city" name="City"  placeholder="Enter City" required>
+        <label><span>*</span>State: </label>
+        <input type="text" id="state" name="State"  placeholder="Enter State" required>
+        <br> <br>
+        <label><span>*</span>Country: </label>
+        <input type="text" id="country" name="Country"  placeholder="Enter Country" required>
+        <label><span>*</span>Postal Code: </label>
+        <input type="text" id="pc" name="postalCode"  placeholder="Enter Postal Code" required>
+        <br> <br>
+        <label><span>*</span>Email: </label>
+        <input type="email" id="email" name="Email"  size=20 placeholder="Enter Email" required>
+        <br> <br>
+        <label><span>*</span>Phone Number: </label>
+        <input type="number" id="phn" name="phoneNumber"  placeholder="Enter Number eg: 1234567890" required>
+        <br> <br>
+        <label><span>*</span>Gender: </label>
+        <input type="radio" name="Type" id="Male" value="Male">
+        <label for="Male" style="width: 2.5em;">Male</label>
+        <input type="radio" name="Type" id="Female" value="Female">
+        <label for="Female" style="width: 3em;">Female</label>
+        <input type="radio" name="Type" id="Other" value="Other">
+        <label for="Other" style="width: 0em;">Other</label>
+        <br><br>
+        <label>Location close to you: </label>
+        <select name="location" size="3">
+            <option selected>None</option>
+            <option>Brampton</option>
+            <option>Scarborough</option>
+            <option>Mississauga</option>
+            <option>Cambridge</option>
+        </select>
+        <br><br>
+        <br> <br>
+        <label><span>*</span>What it is about??: </label>
+        <input type="radio" name="pay" id="Question" value="Question" onclick="javascript:yesnoCheck();">
+        <label for="Question" style="width: 2.5em;">Question</label>
+        <input type="radio" name="pay" id="Hiring" value="Hiring" onclick="javascript:yesnoCheck();">
+        <label for="Hiring" style="width: 3em;">Hiring</label>
+        <input type="radio" name="pay" id="Comment" value="Comment" onclick="javascript:yesnoCheck();">
+        <label for="Comment" style="width: 3em;">Comment</label>
+        <br><br>
+        <input type="number" id="sName" placeholder="Enter the expected Hourly pay" style="visibility:hidden">
+        <br><br>
+        <label>Note to us: </label>
+        <textarea name="Note" cols="30" rows="5"></textarea>
+        <br><br>
+        <input type="button" value="Check the details" onclick="validateform()">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="index.html">
+            <input type="button" value="Submit">
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Start Over">
+        </form>
+    </fieldset>
+    </div>
+</body>
+</html>
